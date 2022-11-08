@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+main{
+    background-color: hsl(244, 38%, 16%);
+    width: 350px;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 10px;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+
+main figure, main figure picture{
+    width: 100%;
+}
+
+main figure picture img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+main section h2{
+    margin-top: 4%;
+    color: white;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    padding:  0 3%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+main section h2 span{
+    color: hsl(277, 64%, 61%);
+}
+
+main section > p{
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 90%;
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    font-family: monospace;
+    font-size: large;
+    font-weight: normal;
+}
+
+main section aside{
+    margin-top: 8%;
+}
+
+main section aside p{
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+main section aside p strong, main aside p em{
+    display: block;
+}
+
+main section aside p em{
+    font-size: x-large;
+    color: white;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 700;
+
+}
+
+main section aside p strong{
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-top: 1%;
+    letter-spacing: 2px;
+}
+
+footer, footer a{
+    color: rgba(152,152,147,0.8) !important;
+}
+
+
+@media screen and (min-width: 700px) {
+    
+
+    main{
+        min-width: 800px;
+        padding-bottom: 0;
+        transform: rotateY(180deg);
+        /* height: 324.4px; */
+    }
+
+    main figure, main section{
+        display: inline-block;
+        width: 49%;
+        vertical-align: middle;
+    }
+
+
+    main figure, main figure picture{
+        height: min-content;
+    }
+
+    main figure picture img{
+        border-radius: 10px 0 0 10px;
+    }
+
+    main section {
+        padding-left: 2%;
+        padding-right: 2%;
+        transform: rotateY(180deg);
+    }
+
+    main section h2{
+        text-align: left;
+        margin-bottom: 10%;
+    }
+
+    main section > p{
+        width: 100%;
+        text-align: left;
+    }
+
+    main section aside {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10%;
+    }
+
+    main section aside > p{
+        margin: 0;
+        text-align: left;
+    }
+
+    main section aside > p strong{
+        font-size: xx-small;
+        letter-spacing: 2px;
+    }
+
+}
