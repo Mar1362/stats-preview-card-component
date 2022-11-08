@@ -115,7 +115,7 @@ footer, footer a{
 
     main figure picture img{
         border-radius: 10px 0 0 10px;
-        box-shadow: 0 10px 15px rgba(200,200,200,0.5);
+        box-shadow: 0 0 20px rgba(200,200,200,0.5);
     }
 
     main section {
